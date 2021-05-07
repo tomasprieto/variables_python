@@ -46,3 +46,14 @@ Cualquier duda con el método split pueden consultarla por el campus
 
 print('Comencemos a ponernos serios')
 # Empezar aquí la resolución del ejercicio
+
+print("Usuario 1, ingresá tu nombre completo")
+usuario1= str(input())
+print("Usuario 2, ingresá tu nombre completo")
+usuario2= str(input())
+
+nombre, apellido=usuario1.split()
+nombre1, apellido2=usuario2.split()
+
+son_parientes= apellido2 in apellido
+print(apellido, "y", apellido2, "¿son parientes?", son_parientes)
